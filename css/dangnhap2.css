@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*Body*/
+body{
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.15;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+#wrapper{
+    /*max-width: 2200px;*/
+    margin: 0px auto;
+}
+
+
+
+/*Body-Header------Main-menu*/
+#login_ a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+#cart button{
+    color: white;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    
+    padding: 5px 5px;
+    margin: 0px 10px;
+    
+}
+#header{
+    background-color: #222;
+    background-size: cover;
+    color: black;
+    /*padding: 20px;*/
+    padding: 0px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+#logo{
+    padding: 5px 5px;
+    flex-basis: 5%;
+}
+#logo img{   
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+.container{   
+    display: flex;
+    /*margin: 0px auto; canh giữa*/
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Open Sans', sans-serif;
+    flex-basis: 70%;
+}
+
+#Hello{
+    color: #f5cd79;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 50px;
+    margin: 0px 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    flex-basis: 25%;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li a{
+    color: whitesmoke;
+    font-size: 15px;
+    display: block;
+    padding: 5px 5px;
+    margin: 0px 5px;
+    text-align: center;
+    text-decoration: none;/* bỏ gạch chân của thẻ a*/
+}
+#main-menu li{
+    position: relative;;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: grey;
+    padding: 5px 0px;
+    list-style: none;
+    width: 100px;
+    border-bottom: 1px solid forestgreen;
+    display: none;/* ẩn menu khi chưa nhấn chọn nó*/
+}
+/* Khi hover chuột vào sẽ hiện thẻ li*/
+#main-menu li:hover>ul.sub-menu{
+    
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border: 1px solid white;
+    left: 0;
+}
+#main-menu ul.sub-menu li:last-child a{
+    /*border: none;*/
+    border-bottom: 1px solid white;
+}
+/*Rê chuột vào hiện vùng sáng*/
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid blue;
+}
+/* Menu cấp 3*/
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 145px;
+    top: 15px;
+}
+/* Thiết lập boder gạch chân khi hover*/
+/* ">": tác động đến cấp đầu tiên*/
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+/*Dấu mũi tên chỗ thanh menu*/
+#main-menu>li.has-child::after{
+    font: var(--fa-font-solid); content: "\f107";
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+}
+#main-menu .sub-menu>li.has-child::after{
+    font: var(--fa-font-solid); content: "\f105";
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 8px 0px;
+
+}
+
+
+/*Search-icon*/
+#search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px #303952;
+}
+#search-box input{
+    width: 210px;
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 5px 10px;
+}
+#search-box #search-btn{
+    background-color:slategrey;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;/*Rê chuột vào có hình bàn tay*/
+    font-size: 15px;
+}
+#content #search-text{
+    max-width: 350px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    overflow: hidden; /* An phan ben ngoai du*/
+    box-shadow: 1px 1px 3px #303952;
+    position: relative;
+
+}
+.box img{
+    /*max-width: 100%;*/
+    max-height: 100px;
+    position: absolute;
+    left: -2000px;
+    transition: left 8.5s ease-in-out;
+}
+.box:hover img{
+    left: 0px;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------*/
+#main-content{
+    display: flex;
+    min-height: 500px;
+}
+/*Content*/
+#content{
+    flex-basis: 20%;
+    background-color: #3d3d3d;
+    background-size: cover;
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    border-style: ridge; 
+}
+
+#img-sale img{
+    max-width: 250px;
+    min-height: 250px;
+    border-style: groove;   
+}
+#huongdan img{
+    max-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    border-style: groove; 
+    margin-left: 75px; 
+    margin-right: 75px;  
+}
+#content h3{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid whitesmoke;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+}
+
+#content h2{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 30px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid #303952;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+    box-shadow: 2px 2px 5px #303952;
+}
+
+
+
+#info{
+    flex-basis: 80%;
+    border: 1px solid #e6e2ed;
+}
+
+/* ---------- Danh sách các sản phẩm ------------ */
+.headline{
+    text-align: center;
+    margin: 10px 0px;
+}
+.headline h3{
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #222;
+    background-color: #333;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+
+
+#footer{
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#footer img{   
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+
+:root{
+    --primary-color: rgb(74, 72, 72);
+    --primary-color-2: rgb(72, 61, 62);
+    --Transparent-color-1: rgba(255, 255, 255, 0.8);
+    --Transparent-color-2: rgba(251, 196, 198, 0.7);
+}
+
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/../img/new4.png);
+    background-size: cover;
+    
+}
+.main{
+    display: grid;
+    justify-content: center;
+}
+
+.fogotpass{
+    margin: -5px 0 20px 5px;
+    color: grey;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup_link{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.check{
+    margin-bottom: 10px;
+    color: rgba(19, 31, 44, 0.584);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.center{
+    width: 400px;
+    
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    
+}
+.contain{
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.contain p{
+    color: rgb(94, 91, 91);
+    font-weight: bold;
+}
+.center .h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--primary-color);
+    color: #0d1d2a;
+}
+
+.center form{
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.center form ul{
+    margin: -5px 0 20px 5px;
+    color: rgb(74, 72, 72);
+    cursor: pointer;
+    font-weight: bold;
+}
+.sub{
+    width: 100%;
+    height: 50px;
+    border: 1px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    margin: 10px 0 10px 0;
+    color: aliceblue;
+    outline: none;
+    cursor: pointer;
+}
+
+.sub:hover{
+    background-color: var(--primary-color-2);
+    color: rgb(0, 0, 0);
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid rgb(66, 71, 83);
+    margin: 30px 0;
+}
+
+form .txt_field:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+form .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}

@@ -1,0 +1,96 @@
+/*Content*/
+#content{
+    flex-basis: 20%;
+    background-color: #3d3d3d;
+    background-size: cover;
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    border-style: ridge; 
+}
+
+#img-sale img{
+    max-width: 250px;
+    min-height: 250px;
+    border-style: groove;   
+}
+#huongdan img{
+    max-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    border-style: groove; 
+    margin-left: 75px; 
+    margin-right: 75px;  
+}
+#content h3{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid whitesmoke;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+}
+
+#content h2{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 30px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid #303952;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+    box-shadow: 2px 2px 5px #303952;
+}
+.h2, h2 {
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    border:1.5px solid black;
+    font-size: smaller;
+    width: 100%;
+    margin: 10px;
+}
+.dathang form table{
+    caption-side: bottom;
+    border-collapse: collapse;
+    border:1.5px solid ;
+    font-size: smaller;
+    width: 100%;
+}
+
+#tentb th{
+    text-align: center;
+    background-color: silver;
+    width: 800px;
+}
+#tendh th{
+    background-color: violet;
+}
+
+
+tbody, td, tfoot, th, thead, tr {
+    color: black;
+    border-color: inherit;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 0;
+    width: 800px;
+    border:1px solid black;
+    padding: 25px;
+    
+}
+#forminfo{
+    font-size: 20px;
+    padding: 10px;
+}
+

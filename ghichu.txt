@@ -1,0 +1,13 @@
+- Căn chỉnh css (v)
+- Bổ sung chat (v)
+- Căn chỉnh table (v)
+- Chức năng quên mật khẩu (v)
+- Thêm bình luận (v)
+- Chỉnh số trang tự động(v)
+- Chỉnh css cho chi tiết sản phẩm và bình luận
+- Quản lý bình luận
+
+
+
+- trang sua danh muc
+- trang sua san pham

@@ -1,0 +1,200 @@
+
+
+/*---------------------------------------------------------------------------------------*/
+#main-content{
+    display: flex;
+    min-height: 500px;
+}
+/*Content*/
+#content{
+    flex-basis: 20%;
+    background-color: #3d3d3d;
+    background-size: cover;
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    border-style: ridge; 
+}
+
+#img-sale img{
+    max-width: 250px;
+    min-height: 250px;
+    border-style: groove;   
+}
+#huongdan img{
+    max-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    border-style: groove; 
+    margin-left: 75px; 
+    margin-right: 75px;  
+}
+#content h3{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid whitesmoke;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+}
+
+#content h2{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 30px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid #303952;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+    box-shadow: 2px 2px 5px #303952;
+}
+
+/* ---------- Danh sách các tin tức ------------ */
+/*
+headline
+headline h3
+*/
+ul.news{
+    list-style: none;/* Xóa bỏ dấu chấm của thr li*/
+    display: flex; /* Sản phẩm hiện trên 1 hàng dài*/
+    flex-wrap: wrap;/* Xuống dòng*/
+    justify-content: space-between;/* Giãn khung hiển thị theo hàng ngang*/
+    padding: 10px 10px;
+
+}
+ul.news li#new1{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new1.png);
+    background-size: cover;
+    border-style: ridge;
+}
+ul.news li#new2{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new2.png);
+    background-size: cover;
+    border-style: ridge; 
+}
+ul.news li#new3{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+   
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new3.png);
+    background-size: cover;
+    border-style: ridge;
+}
+ul.news li#new4{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new4.png);
+    background-size: cover;
+    border-style: ridge;
+}
+ul.news li#new5{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new5.png);
+    background-size: cover;
+    border-style: ridge;
+}
+ul.news li#new6{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new6.png);
+    background-size: cover;
+    border-style: ridge;
+}
+ul.news li#new7{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new7.png);
+    background-size: cover;
+    border-style: ridge;
+}
+ul.news li#new8{ /* 100%, muốn 1 hàng 4sp thì 100% chia 4 còn 25%*/
+    
+    flex-basis: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    background-image: url(/../img/new8.png);
+    background-size: cover;
+    border-style: ridge;
+}
+
+ul.news li .news-top .news-thumb{
+    display: block;
+}
+ul.news li .news-top p{
+    padding: 10px 10px;
+    text-align: justify;
+}
+ul.news li:hover .news-top p{
+    filter: opacity(70%);
+}
+
+ul.news li .news-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.news li .news-top a.cat-now{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #303952;
+    padding: 5px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -45px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.news li:hover a.cat-now{
+    bottom: 0px;
+}
+
+
+
+

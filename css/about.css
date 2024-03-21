@@ -1,0 +1,163 @@
+
+/*---------------------------------------------------------------------------------------*/
+#main-content{
+    display: flex;
+    min-height: 500px;
+    background-image: url(/../img/new4.png);
+    background-size: cover;
+}
+
+/*Content*/
+#content{
+    flex-basis: 20%;
+    background-color: #3d3d3d;
+    background-size: cover;
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    border-style: ridge; 
+}
+
+#img-sale img{
+    max-width: 250px;
+    min-height: 250px;
+    border-style: groove;   
+}
+#huongdan img{
+    max-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    border-style: groove; 
+    margin-left: 75px; 
+    margin-right: 75px;  
+}
+#content h3{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 10px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid whitesmoke;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+}
+
+#content h2{
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 30px 30px;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    border: 1px solid #303952;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    font-weight: 600;
+    background-color: #303952;
+    box-shadow: 2px 2px 5px #303952;
+}
+
+
+#info{
+    flex-basis: 80%;
+    border: 1px solid #e6e2ed;
+}
+
+/* ---------- Danh sách các sản phẩm ------------ */
+.headline{
+    text-align: center;
+    margin: 10px 0px;
+}
+.headline h3{
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #222;
+    background-color: #333;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    color: whitesmoke;
+    font-weight: 600;
+}
+#search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: ridge; 
+    
+}
+#search-box input{
+    width: 210px;
+    border-style: ridge; 
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 5px 10px;
+}
+#search-box #search-btn{
+    background-color:#444;
+    border: none;
+    padding: 6px 7px;
+    cursor: pointer;/*Rê chuột vào có hình bàn tay*/
+    font-size: 15px;
+}
+#content #img-sale .huongdan{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#content .huongdan h3{
+    font-size: 14px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 1px solid #222;
+    background-color: #e6e2ed;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    color: black;
+    font-weight: 600;
+}
+.headline a{
+    background-color: #333;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.headline input#capnhat{
+    background-color: #333;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#info p {
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: justify;
+    margin: 10px 20px;
+    border-style: ridge;
+    display: inline-block; /*Chỉnh cho khung vừa với chữ*/
+    color: #555;
+    background-color: #e6e2ed;
+    opacity: 0.8;  
+    filter: alpha(opacity=30);
+}
+
+
+#info img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#cart{
+    background-image: url(/../img/new4.png);
+    background-size: cover;
+   
+}

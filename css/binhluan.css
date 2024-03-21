@@ -1,0 +1,48 @@
+#binhluan{
+    background-color: white;
+    background-size: cover;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    border-style: ridge; 
+    margin: 10px;
+    
+}
+#binhluan form{
+    margin: 10px;
+    display: flex;
+    
+}
+#shbinhluan{
+    background-color: white;
+    background-size: cover;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    border-style: ridge; 
+    margin: 10px;
+}
+#shbinhluan img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: ridge;
+    margin-left: 10px;
+}
+#binhluan img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: ridge;
+    margin-right: 10px;
+}
+#binhluan textarea{
+    margin-right: 10px;
+}
+#binhluan input{
+    margin-right: 10px;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+ }

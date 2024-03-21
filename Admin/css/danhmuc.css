@@ -1,0 +1,50 @@
+.h2, h2 {
+    color: navy;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    border:1.5px solid black;
+    text-align: center;
+    font-size: smaller;
+    width: 100%;
+}
+#tendm th{
+    color: whitesmoke;
+    background-color: #555;
+}
+#tensp th{
+    color: whitesmoke;
+    background-color: #555;
+}
+#tendm th.stt {
+    width: 100px;   
+}
+tbody, td, tfoot, th, thead, tr {
+    color: black;
+    border-color: inherit;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 0;
+    width: 500px;
+    border:1px solid black;
+    padding: 25px;
+    
+}
+#forminfo{
+    font-size: 20px;
+    padding: 10px;
+}
+#bg_img{
+    margin: 0;
+    padding: 0;
+    background-image: url(/../img/new4.png);
+    background-size: cover;
+    border-style: ridge;   
+}
+
+
+
